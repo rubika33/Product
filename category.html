@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoNest - Category</title>
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo"><h1>MongoNest</h1></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="category.html">Category</a>
+        </nav>
+    </header>
+
+    <!-- Search & Filters -->
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <select id="size">
+            <option value="">All Sizes</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+        <button id="searchBtn">Search</button>
+    </section>
+
+    <!-- Product List -->
+    <section id="productList" class="product-list"></section>
+
+    <!-- JS -->
+    <script src="category.js" ></script>
+</body>
+</html>
+
+
+
