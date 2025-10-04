@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - MongoNest</title>
+  <link rel="stylesheet" href="styles/cart.css">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="cart-header">
+    <h1><i class="fas fa-shopping-cart"></i> My Cart</h1>
+  </header>
+
+  <!-- Cart Container -->
+  <div class="cart-container">
+    <!-- Cart Items -->
+    <div class="cart-items">
+      
+      <div class="cart-item">
+        <img src="images/bag.webp" alt="Product 1" width="300" height="300">
+        <div class="item-details">
+          <h3>bags</h3>
+          <p>Color: pink | Size: Standard</p>
+          <p class="price">$600</p>
+        </div>
+        <div class="item-actions">
+          <input type="number" value="1" min="1">
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="images/shoe.png" alt="Product 2" width="300" height="300">
+        <div class="item-details">
+          <h3>Shoes</h3>
+          <p>Color: Royal white| Size: 6</p>
+          <p class="price">$800</p>
+        </div>
+        <div class="item-actions">
+          <input type="number" value="2" min="1">
+          <button class="remove-btn">Remove</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: <span>$1400</span></p>
+      <p>Shipping: <span>$100</span></p>
+      <p><strong>Total: <span>$1500</span></strong></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</body>
+</html>

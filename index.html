@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MongoNest</title>
     <link rel="icon" type="images/png" href="images/logo2.png" border-radius="50%" sizes="240X240">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <nav class="navbar">
             <a href="#about">About</a>
             <a href="category.html">Category</a>
-            <a href="#settings">Settings</a>
+            
         </nav>
     </header>
 
@@ -30,7 +30,7 @@
                 <div class="product-info">
                     <h3>Makeup Kit </h3>
                     <p class="price">$1400</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 2 -->
@@ -39,7 +39,7 @@
                 <div class="product-info">
                     <h3>Jewellary</h3>
                     <p class="price">$4000</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()"> Add to Cart</button>
                 </div>
             </div>
             <!-- Product 3 -->
@@ -48,16 +48,17 @@
                 <div class="product-info">
                     <h3>Dresses</h3>
                     <p class="price">$500</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
+           
             <!-- Product 4 -->
             <div class="product-card">
                 <img src="images/growssary.webp" alt="Product 4">
                 <div class="product-info">
                     <h3>Grocery</h3>
                     <p class="price">$600</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 5 -->
@@ -66,7 +67,7 @@
                 <div class="product-info">
                     <h3>Home Appliances</h3>
                     <p class="price">$10,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 6 -->
@@ -75,7 +76,7 @@
                 <div class="product-info">
                     <h3>Electronics</h3>
                     <p class="price">$20,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 7 -->
@@ -84,7 +85,7 @@
                 <div class="product-info">
                     <h3>Bags</h3>
                     <p class="price">$800</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 8 -->
@@ -93,7 +94,7 @@
                 <div class="product-info">
                     <h3>Stationary</h3>
                     <p class="price">$300</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 9 -->
@@ -102,7 +103,7 @@
                 <div class="product-info">
                     <h3>watches</h3>
                     <p class="price">$700</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
             <!-- Product 10 -->
@@ -111,7 +112,7 @@
                 <div class="product-info">
                     <h3>Footwear</h3>
                     <p class="price">$690</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <button class="add-to-cart" onclick="goToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -134,6 +135,11 @@
             </div>
         </div>
     </section>
+    <script>
+    function goToCart() {
+        window.location.href = "cart.html"; // Redirects to cart page
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer">
